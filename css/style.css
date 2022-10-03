@@ -1,0 +1,247 @@
+/* css reset  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Css Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar  */
+#navbar {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    top: 0%;
+    height: 75px;
+    /* justify-content: center; */
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+}
+
+/* navigation bar:lago and image */
+#logo {
+    margin: 0px 5px;
+}
+
+#logo img {
+    height: 80px;
+    width: 80px;
+}
+
+/* navigation bar: list styling */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3em;
+    /* font-style: italic; */
+    font-family: 'Baloo Da 2', cursive;
+}
+
+#navbar ul li a {
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    /* margin: 10px 10px; */
+    display: block;
+    /* border-radius: 50px; */
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(190, 182, 182);
+    padding: 5px 20px;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    /* margin: 2px 2px; */
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+#home::before {
+    content: "";
+    background: url('../Image/bg6.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 75%;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+}
+
+#home h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font: 1.2rem;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+#home p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'DM Serif Text', serif;
+}
+
+/* services section  */
+#services {
+    margin: 20px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid black;
+    margin: 5px 5px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: beige;
+}
+
+#services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+/* clients section  */
+#client-section {
+    position: relative;
+
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../Image/clients2.jpg')no-repeat center center/cover;
+    height: 99%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients-item {
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+
+#clients img {
+    height: 150px;
+
+}
+
+/* Contact Section  */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('../Image/cus.jpeg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: .6;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'DM Serif Text', serif;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    text-align: center;
+    padding: .5rem;
+    border-radius: 9px;
+    font-size: .8rem;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* utility class */
+.h-primary {
+    font-size: 2.8rem;
+    padding: 10px 12px;
+    font-family: 'DM Serif Text', serif;
+}
+
+.h-secondary {
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 5px 27px;
+    margin: 40px 20px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: #956c4a;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 2px solid black;
+    background-color: white;
+    color: rgb(204, 63, 63);
+
+}
+
+.center {
+    text-align: center;
+    font-family: 'DM Serif Text', serif;
+}
